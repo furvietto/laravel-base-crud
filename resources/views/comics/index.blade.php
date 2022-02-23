@@ -23,6 +23,7 @@
                         <th>Author</th>
                         <th>Price</th>
                         <th>Exitdate</th>
+                        <th>view</th>
                     </tr>
                 </thead>
                 <tbody>

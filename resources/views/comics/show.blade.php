@@ -8,16 +8,14 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>{{ $comic->title }}</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-            <img class="fluid-img" src=" {{$comic->photo }}" alt="{{$comic->title}}">
-            </div>
-            <div class="col">
-            <div>{{ $comic->author }}</div>
-            <div><h2>{{  $comic->price }} €</h2></div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{$comic->photo}}" alt="{{$comic->title}}">
+                    <div class="card-body">
+                      <h5 class="card-title">{{$comic->title}}</h5>
+                      <p class="card-text">{{$comic->description}}</p>
+                      <a href="{{route("comics.index")}}" class="btn btn-primary">go indietro</a>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
