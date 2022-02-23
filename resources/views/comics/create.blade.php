@@ -12,31 +12,34 @@
                     @csrf
                     @method('POST')
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name Keyboard</label>
-                        <input type="text" class="form-control" id="name" name="name">
-                      </div>
-                      <div class="mb-3">
-                        <label for="sku" class="form-label">sku</label>
-                        <input type="text" class="form-control" id="sku" name="sku">
-                      </div>
-                      <div class="mb-3">
-                          <label for="features" class="form-label">Features</label>
-                          <textarea class="form-control" id="features" name="features" rows="3"></textarea>
-                      </div>
-                      <div class="mb-3">
-                        <label for="switches" class="form-label">switches</label>
-                        <input type="text" class="form-control" id="switches" name="switches">
+                        <label for="title" class="form-label">Title Comic</label>
+                        <input type="text" class="form-control" id="title" name="title">
                       </div>
                       <div class="mb-3">
                         <label for="photo" class="form-label">photo</label>
                         <input type="text" class="form-control" id="photo" name="photo">
                       </div>
                       <div class="mb-3">
-                        <label for="keycaps" class="form-label">keycaps</label>
-                        <input type="text" class="form-control" id="keycaps" name="keycaps">
+                          <label for="author" class="form-label">Author</label>
+                          <input type="text" class="form-control" id="author" name="author" rows="3">
                       </div>
                       <div class="mb-3">
-                        <label for="keycaps" class="form-label">price</label>
+                        <label for="genre" class="form-label">genre</label>
+                        <input type="text" class="form-control" id="genre" name="genre">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="description" class="form-label">description</label>
+                        <textarea class="form-control" id="description" name="description"></textarea>
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="exitDate" class="form-label">exitDate</label>
+                        <input type="date" class="form-control" id="exitDate" name="exitDate">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="price" class="form-label">price</label>
                         <input type="number" class="form-control" id="price" name="price">
                       </div>
                       
