@@ -24,6 +24,7 @@
                         <th>Price</th>
                         <th>Exitdate</th>
                         <th>view</th>
+                        <th>update</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -34,6 +35,7 @@
                         <td>{{ $comic->price }} €</td>
                         <td>{{ $comic->exitDate }}</td>
                         <td><a class="btn btn-primary" href="{{ route('comics.show', $comic) }}">View</a></td>
+                        <td><a class="btn btn-primary" href="{{ route('comics.edit', $comic) }}">Update</a></td>
                     </tr>
                 @endforeach
                 </tbody>
