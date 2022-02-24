@@ -24,7 +24,7 @@
                         <th>Price</th>
                         <th>Exitdate</th>
                         <th>view</th>
-                        <th>update</th>
+                        <th>Edit</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -7,6 +7,11 @@
 @section('content')
     <div class="container">
         <div class="row">
+          <div class="col">
+            <h1>ADD NEW COMIC</h1>
+          </div>
+        </div>
+        <div class="row">
             <div class="col">
                 <form action="{{route("comics.store")}}" method="post">
                     @csrf

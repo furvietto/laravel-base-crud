@@ -8,6 +8,13 @@
 <div class="container">
     <div class="row">
         <div class="col">
+            <h1>
+                EDIT {{$comic->title}}
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
             <form action="{{route("comics.update", $comic)}}" method="post">
                 @csrf
                 @method('PATCH')
@@ -44,6 +51,7 @@
                   </div>
                   
                   <button type="submit" class="btn btn-primary">Save</button>
+                  <a class="btn btn-primary" href="{{url()->previous()}}">Back</a>
             </form>
         </div>
     </div>
