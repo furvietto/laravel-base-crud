@@ -7,10 +7,13 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <h1 class="h1">Admin - All Comics</h1>
+        
     </div>
-    <div class="row">
-        <div class="col">
+    <div class="row align-items-center justify-content-between">
+        <div class="col-4">
+            <h1 class="h1">Admin - All Comics</h1>
+        </div>
+        <div class="col-2">
             <a href="{{ route('comics.create') }}" class="btn btn-primary">Add new Comics</a>
         </div>
     </div>
