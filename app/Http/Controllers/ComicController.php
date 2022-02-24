@@ -79,7 +79,11 @@ class ComicController extends Controller
 
         $update = $comic->update($data);
 
-        if()
+        if(!$update) {
+            dd("save non riuscito");
+        }
+
+        return redirect()->route("comics.show", $comic);
     }
 
     /**
