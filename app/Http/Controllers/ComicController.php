@@ -87,7 +87,7 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        $request->validate()
+        $request->validate($this->validator);
 
         $data = $request->all();
 
