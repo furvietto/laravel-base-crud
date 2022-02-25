@@ -17,6 +17,12 @@
             <a href="{{ route('comics.create') }}" class="btn btn-primary">Add new Comics</a>
         </div>
     </div>
+    
+    @if (session("status"))
+        <div class="alert alert-success">
+            {{session("status")}}
+        </div>
+    @endif
     <div class="row">
         <div class="col">
              <table class="table table-primary">
@@ -28,6 +34,7 @@
                         <th>Exitdate</th>
                         <th>view</th>
                         <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,6 +46,13 @@
                         <td>{{ $comic->exitDate }}</td>
                         <td><a class="btn btn-primary" href="{{ route('comics.show', $comic) }}">View</a></td>
                         <td><a class="btn btn-primary" href="{{ route('comics.edit', $comic) }}">Edit</a></td>
+                        <td>
+                            <form action="{{route("comics.destroy", $comic)}}" method="post">
+                                @csrf
+                                @method("DELETE")
+                                <button class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>
