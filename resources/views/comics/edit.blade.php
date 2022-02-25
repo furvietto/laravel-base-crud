@@ -21,6 +21,9 @@
                 <div class="mb-3">
                     <label for="title" class="form-label">Title Comic</label>
                     <input type="text" class="form-control" id="title" name="title" value="{{$comic->title}}">
+                      @error('title')
+                      <div class="alert alert-danger">{{ $message }}</div>
+                      @enderror
                   </div>
                   <div class="mb-3">
                     <label for="photo" class="form-label">photo</label>
